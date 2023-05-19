@@ -21,13 +21,19 @@ Hola -> <?php isset($_POST["nombre"]) ? print $_POST["nombre"] : ""; ?> <h1>Info
     $cantidad = count($_POST["lenguajes"]);
     
     if ($cantidad <= 2 && $_POST["ingles"] == "Basico"){
-        header('Location: http://localhost:3000/aceptadoApolo.php');
+
+        header('Location: http://localhost:3000/aceptadoApolo.php?cc=' . $_POST["cc"] . '&nombre=' . $_POST["nombre"] . '%20' . $_POST["apellido"] .'&email=' . $_POST["email"] . '&movil=' . $_POST["movil"] . '&nivelEstudio=' . $_POST["titulo"] . '&lenguajes=' . implode(',', $_POST["lenguajes"]) . '&ingles=' . $_POST["ingles"]);
+
     }
     else if ($cantidad <= 4 && $_POST["ingles"] == "Intermedio"){
-        header('Location: http://localhost:3000/aceptadoArtemis.php');
+
+        header('Location: http://localhost:3000/aceptadoArtemis.php?cc=' . $_POST["cc"] . '&nombre=' . $_POST["nombre"] . '&email=' . $_POST["email"] . '&movil=' . $_POST["movil"] . '&nivelEstudio=' . $_POST["titulo"] . '&lenguajes=' . implode(',', $_POST["lenguajes"]) . '&ingles=' . $_POST["ingles"]);
+
     }   
     else if ($cantidad <= 6 && $_POST["ingles"] == "Avanzado"){
-        header('Location: http://localhost:3000/aceptadoSputnik.php');
+
+        header('Location: http://localhost:3000/aceptadoSputnik.php?cc=' . $_POST["cc"] . '&nombre=' . $_POST["nombre"] . '&email=' . $_POST["email"] . '&movil=' . $_POST["movil"] . '&nivelEstudio=' . $_POST["titulo"] . '&lenguajes=' . implode(',', $_POST["lenguajes"]) . '&ingles=' . $_POST["ingles"]);
+        
     }
 
     else {echo "No admitido";}

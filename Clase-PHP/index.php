@@ -16,29 +16,29 @@
             
             <div class="form-group col-md-6">
                 <label for="inputEmail4">CC</label>
-                <input type="text" class="form-control" id="inputEmail4">
+                <input name="cc" type="text" class="form-control" id="inputEmail4">
             </div>
             
             <div class="form-group col-md-6">
                 <label for="inputPassword4">Nombre</label>
-                <input type="text" class="form-control" id="inputPassword4">
+                <input name="nombre" type="text" class="form-control" id="inputPassword4">
             </div>
     </div>
 
         <div class="form-group">
             <label for="inputAddress">Apellidos</label>
-            <input type="text" class="form-control" id="inputAddress">
+            <input name="apellido" type="text" class="form-control" id="inputAddress">
         </div>
 
         <div class="form-group">
             <label for="inputAddress2">Email</label>
-            <input type="email" class="form-control" id="inputAddress2">
+            <input name="email" type="email" class="form-control" id="inputAddress2">
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputCity">Telefono</label>
-                <input type="text" class="form-control" id="inputCity">
+                <input name="movil" type="text" class="form-control" id="inputCity">
             </div>
         </div>
     <br>
