@@ -5,6 +5,7 @@ $email = $_GET["email"];
 $movil = $_GET["movil"];
 $nivelEstudio = $_GET["nivelEstudio"];
 $lenguajes = explode(',', $_GET["lenguajes"]);
+
 $ingles = $_GET["ingles"];
 
 // Imprimir la información
